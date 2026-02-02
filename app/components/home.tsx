@@ -321,7 +321,7 @@ export function Home() {
 
   return (
     <ErrorBoundary>
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Screen />
       </Router>
     </ErrorBoundary>
